@@ -13,9 +13,9 @@ public class CadHospitais2 extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void atualhospital(View view){
+    public void listarhospitais(View view){
 
-        Intent intent = new Intent(getApplicationContext(), AtualizarHospitais.class);
+        Intent intent = new Intent(getApplicationContext(), ListarHospitais.class);
         startActivity(intent);
     }
 

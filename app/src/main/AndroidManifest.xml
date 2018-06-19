@@ -38,7 +38,12 @@
             android:name=".MarcarExame"
             android:label="@string/app_marcarexame" />
         <activity android:name=".CadHospitais2" />
-        <activity android:name=".MarcarConsulta2"></activity>
+        <activity android:name=".MarcarConsulta2" />
+
+        <activity android:name=".ListarHospitais"
+            android:label="@string/app_listarhospitais">
+
+        </activity>
     </application>
 
 </manifest>

@@ -32,7 +32,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="206dp"
-        android:onClick="atualhospital"
+        android:onClick="listarhospitais"
         android:text="Atulizar Hospital" />
 
     <Button

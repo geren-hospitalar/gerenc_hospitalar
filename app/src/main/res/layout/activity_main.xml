@@ -31,7 +31,7 @@
         android:layout_height="84dp"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/clientes"
-        android:layout_marginBottom="21dp"
+        android:layout_marginBottom="33dp"
         app:srcCompat="@drawable/marcar_exame" />
 
     <ImageView
