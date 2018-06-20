@@ -99,6 +99,10 @@
         <item>14:00</item>
     </string-array>
 
+    <!-- Mensagens de Validação-->
+    <string name="val_cadcliente">Há informações inválidas ou campos vazios!</string>
+
+
 
 
 

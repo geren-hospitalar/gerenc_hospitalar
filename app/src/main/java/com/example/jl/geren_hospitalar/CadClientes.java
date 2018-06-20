@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Toolbar;
 
@@ -30,8 +31,7 @@ public class  CadClientes extends AppCompatActivity {
     }
 
 
-    private void validaCampos(){
-        boolean res =  false;
+    public void validaCampos(View view){
 
         String nome = txtNome.getText().toString();
         String cpf = txtCpf.getText().toString();
@@ -39,48 +39,33 @@ public class  CadClientes extends AppCompatActivity {
         String telefone = txtTel.getText().toString();
         String dtnascimento = txtDtNacimento.getText().toString();
 
-        if (res = campoVazio(nome)){
-            txtNome.requestFocus();
-        }else if(res = campoVazio(cpf)){
-            txtCpf.requestFocus();
-        }else if(res = campoVazio(endereco)) {
-            txtEnd.requestFocus();
-        }else if(res = campoVazio(telefone)) {
-            txtTel.requestFocus();
-        }else if(res = campoVazio(dtnascimento)) {
-            txtDtNacimento.requestFocus();
+        boolean validar = true;
+
+        if(nome == null || nome.equals("")){
+            validar = false;
+            txtNome.setError(getString(R.string.val_cadcliente));
+        }
+        if(cpf == null || cpf.equals("")){
+            validar = false;
+            txtCpf.setError(getString(R.string.val_cadcliente));
+        }
+
+        if(endereco == null || endereco.equals("")){
+            validar = false;
+            txtEnd.setError(getString(R.string.val_cadcliente));
+        }
+        if(telefone == null || telefone.equals("")){
+            validar = false;
+            txtTel.setError(getString(R.string.val_cadcliente));
+        }
+        if(dtnascimento == null || dtnascimento.equals("")){
+            validar = false;
+            txtDtNacimento.setError(getString(R.string.val_cadcliente));
         }
 
 
-        if(res ){
-            AlertDialog.Builder dlg = new AlertDialog.Builder(this);
-            dlg.setTitle("Aviso");
-            dlg.setMessage("Há campos inválidos ou em branco!");
-            dlg.setNeutralButton("OK", null);
-            dlg.show();
-        }
-
-    }
-
-    private boolean campoVazio(String valor){
-        boolean resultado = (TextUtils.isEmpty(valor) || valor.trim().isEmpty());
-        return  resultado;
     }
 
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-
-        int id = item.getItemId();
-
-        switch (id){
-            case R.id.bntCadastrarCli:
-            validaCampos();
-            break;
-        }
-
-
-        return super.onOptionsItemSelected(item);
-    }
 
 }
