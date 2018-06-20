@@ -63,7 +63,7 @@
         android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/bntCadastrarHosp"
+        android:id="@+id/bntCadastrarCli"
         android:layout_width="353dp"
         android:layout_height="61dp"
         android:layout_alignParentBottom="true"

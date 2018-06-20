@@ -10,7 +10,7 @@ public class CadClientes implements Serializable{
     private Integer cli_cpf;
     private String cli_end;
     private String cli_tel;
-    private Date cli_dt_nasc;
+    private String cli_dt_nasc;
     private String bnt_cadcli;
 
     //metodo construtor vazio obrigatorio em toda classe que for de implementacao
@@ -19,7 +19,7 @@ public class CadClientes implements Serializable{
     }
 
     //metodo construtor ja com parametros
-    public CadClientes (Integer cli_id,String cli_nome,Integer cli_cpf,String cli_end,String cli_tel,Date cli_dt_nasc,String bnt_cadcli){
+    public CadClientes (Integer cli_id,String cli_nome,Integer cli_cpf,String cli_end,String cli_tel,String cli_dt_nasc,String bnt_cadcli){
         this.cli_id = cli_id;
         this.cli_nome = cli_nome;
         this.cli_cpf = cli_cpf;
@@ -50,7 +50,7 @@ public class CadClientes implements Serializable{
         return cli_tel;
     }
 
-    public Date getCli_dt_nasc() {
+    public String getCli_dt_nasc() {
         return cli_dt_nasc;
     }
 
