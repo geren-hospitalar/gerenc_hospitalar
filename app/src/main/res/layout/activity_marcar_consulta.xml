@@ -13,7 +13,8 @@
         android:layout_height="42dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        />
 
     <Spinner
         android:id="@+id/spinnerCli"
@@ -32,7 +33,7 @@
         android:layout_marginTop="164dp" />
 
     <Spinner
-        android:id="@+id/spinnerData"
+        android:id="@+id/spinner4"
         android:layout_width="351dp"
         android:layout_height="49dp"
         android:layout_alignParentBottom="true"
@@ -40,7 +41,7 @@
         android:layout_marginBottom="218dp" />
 
     <Spinner
-        android:id="@+id/spinnerHora"
+        android:id="@+id/spinner5"
         android:layout_width="354dp"
         android:layout_height="51dp"
         android:layout_alignParentBottom="true"
@@ -50,11 +51,10 @@
     <Button
         android:id="@+id/bntMarcarConsulta"
         android:layout_width="340dp"
-        android:layout_height="61dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="14dp"
         android:layout_marginStart="26dp"
-        android:onClick=""
         android:text="Marcar Consulta" />
 </RelativeLayout>

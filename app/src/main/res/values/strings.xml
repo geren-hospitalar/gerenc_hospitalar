@@ -9,7 +9,6 @@
     <string name="app_marcarconsulta">Marcar Consulta</string>
     <string name="app_listconsultas">Listar Consultas</string>
     <string name="app_cancelconsultas">Cancelar Consultas</string>
-    <string name="app_listarhospitais">Hospitais Cadastrados</string>
 
     <!-- Textos das Spinners de Marcar Consulta-->
     <string-array name="app_hospital">
@@ -98,17 +97,10 @@
         <item>13:05</item>
         <item>14:00</item>
     </string-array>
-
-    <!-- Mensagens de Validação-->
-    <string name="val_cadcliente">Há informações inválidas ou campos vazios!</string>
+    <string name="title_activity_main2">Main2Activity</string>
 
 
-
-
-
-
-
-
+    <!-- Títulos das Telas-->
 
 
 </resources>
